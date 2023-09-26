@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>fake naver</h1>
+  <form action="https://search.naver.com/search.naver/" method="GET">
+{% comment %} method의 기본값은 get {% endcomment %}
+    <label for="message">검색어 활성화:</label>
+    <input type="text" name='query' id='message'>
+    <input type="submit">
+  </form>
+{% endblock content %}
+
